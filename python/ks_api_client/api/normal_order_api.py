@@ -157,7 +157,7 @@ class NormalOrderApi(object):
         auth_settings = ['bearerAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/orders/1.0/order/normal/{orderId}', 'DELETE',
+            '/orders/1.1/order/normal/{orderId}', 'DELETE',
             path_params,
             query_params,
             header_params,
@@ -312,7 +312,7 @@ class NormalOrderApi(object):
         auth_settings = ['bearerAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/orders/1.0/order/normal', 'PUT',
+            '/orders/1.1/order/normal', 'PUT',
             path_params,
             query_params,
             header_params,
@@ -467,7 +467,7 @@ class NormalOrderApi(object):
         auth_settings = ['bearerAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/orders/1.0/order/normal', 'POST',
+            '/orders/1.1/order/normal', 'POST',
             path_params,
             query_params,
             header_params,
